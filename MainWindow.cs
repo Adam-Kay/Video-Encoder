@@ -20,6 +20,10 @@ namespace Video_Encoder__NET_Core_Version_
         public MainWindow()
         {
             InitializeComponent();
+
+            /// Reduces flicker on drawn controls (https://stackoverflow.com/a/64507)
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
+
             this.ActiveControl = label_Title; /// Set focus to label to draw focus away from buttons
             customComboBox_DestinationExtension.SelectedIndex = 0;
             //customComboBox_DestinationFolder.BorderColor = SystemColors.GrayText;
@@ -61,17 +65,6 @@ namespace Video_Encoder__NET_Core_Version_
             }
         }
         #endregion
-
-        /// Reduces flicker on drawn UserControls 
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;  /// Turn on WS_EX_COMPOSITED
-                return cp;
-            }
-        }
 
         private void parse_TextBoxSource_for_DestinationComboBox()
         {
