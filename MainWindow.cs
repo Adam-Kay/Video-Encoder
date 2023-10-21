@@ -21,7 +21,7 @@ namespace Video_Encoder__NET_Core_Version_
         {
             InitializeComponent();
 
-            /// Reduces flicker on drawn controls (https://stackoverflow.com/a/64507)
+            /// Reduces flicker on drawn controls (https://stackoverflow.com/a/64507) 
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint, true);
 
             this.ActiveControl = label_Title; /// Set focus to label to draw focus away from buttons
