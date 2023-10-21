@@ -2,14 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <RootNamespace>Video_Encoder__NET_Core_Version_</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+	<EnableWindowsTargeting>true</EnableWindowsTargeting>
     <ApplicationIcon>Resources\videobutton.ico</ApplicationIcon>
     <StartupObject>Video_Encoder__NET_Core_Version_.Program</StartupObject>
-    <Version>1.3.5</Version>
-    <AssemblyName>Video Encoder (NET Core)</AssemblyName>
+    <Version>1.0.3</Version>
+    <AssemblyName>Video Encoder</AssemblyName>
 	<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+	<AssemblyVersion>1.0</AssemblyVersion>
+	<FileVersion></FileVersion>
 	<!-- Have to include the above line so that it actually publishes to a single file. Net 5.0 weirdness. -->
   </PropertyGroup>
 
@@ -36,6 +39,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="CustomControls\Icons\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -43,7 +50,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CustomControls\Icons\" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

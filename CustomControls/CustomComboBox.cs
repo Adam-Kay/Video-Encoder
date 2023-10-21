@@ -14,6 +14,10 @@ namespace Video_Encoder__NET_Core_Version_ {
         private readonly int buttonWidth = SystemInformation.HorizontalScrollBarArrowWidth;
         protected override void WndProc(ref Message m) {
             base.WndProc(ref m);
+
+            /// Supposedly reduces flicker.
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true); // seems to make no difference
+
             if (m.Msg == WM_PAINT) {
                 using (var g = Graphics.FromHwnd(Handle)) {
                     using var b = new SolidBrush(Color.FromArgb(48, 48, 48));
@@ -101,18 +105,18 @@ namespace Video_Encoder__NET_Core_Version_ {
         /// Very dirty solution but it's too much work to render text through the control
         private void PlaceholderChanger(object sender = null, EventArgs e = null) {
             if (!(string.IsNullOrWhiteSpace(this._PlaceholderText))) {  /// If the PlaceholderText string isn't empty
-                if (this.Text == this.renderedText) {                   /// If the current text and text to be rendered are the same
-                    this.Text = "";                                     /// Set the text to blank
-                    this.TextAppearance = AppearanceTypes.Active;       /// And the Appearance Type to active
-                } else if (string.IsNullOrWhiteSpace(this.Text)) {      /// OR if the current Text is empty
-                    this.TextAppearance = AppearanceTypes.Passive;      /// Set the Appearance type to passive
-                    this.Text = this.renderedText;                      /// And set the text to the text to be rendered
+                if (this.Text == this.renderedText) {                     /// If the current text and text to be rendered are the same
+                    this.Text = "";                                         /// Set the text to blank
+                    this.TextAppearance = AppearanceTypes.Active;           /// And the Appearance Type to active
+                } else if (string.IsNullOrWhiteSpace(this.Text)) {        /// OR if the current Text is empty
+                    this.TextAppearance = AppearanceTypes.Passive;          /// Set the Appearance type to passive
+                    this.Text = this.renderedText;                          /// And set the text to the text to be rendered
                 } else {
                     this.TextAppearance = AppearanceTypes.Active;
                 }
             } else {                                                    /// If the PlaceholderText IS empty
-                this.Text = "";                                         /// Set the text to empty
-                this.TextAppearance = AppearanceTypes.Active;           /// And Appearance type to active
+                this.Text = "";                                          /// Set the text to empty
+                this.TextAppearance = AppearanceTypes.Active;            /// And Appearance type to active
             }
         }
 
