@@ -259,8 +259,8 @@
             // tablePanel_Main
             // 
             tablePanel_Main.ColumnCount = 2;
-            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.05286F));
-            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.94714F));
+            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tablePanel_Main.Controls.Add(tablePanel_Dest, 0, 2);
             tablePanel_Main.Controls.Add(label_Title, 0, 0);
             tablePanel_Main.Controls.Add(tablePanel_Src, 0, 1);
@@ -276,7 +276,6 @@
             tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             tablePanel_Main.Size = new System.Drawing.Size(916, 378);
             tablePanel_Main.TabIndex = 0;
             // 
