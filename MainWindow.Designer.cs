@@ -1,5 +1,7 @@
-﻿namespace Video_Encoder__NET_Core_Version_ {
-    partial class MainWindow {
+﻿namespace Video_Encoder__NET_Core_Version_
+{
+    partial class MainWindow
+    {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -9,8 +11,10 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing) {
-            if (disposing && (components != null)) {
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -22,376 +26,363 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.button_Confirm = new System.Windows.Forms.Button();
-            this.tablePanel_Src = new System.Windows.Forms.TableLayoutPanel();
-            this.label_SourceFile = new System.Windows.Forms.Label();
-            this.button_SourceSelect = new System.Windows.Forms.Button();
-            this.textBox_Source = new System.Windows.Forms.TextBox();
-            this.label_Title = new System.Windows.Forms.Label();
-            this.tablePanel_Dest = new System.Windows.Forms.TableLayoutPanel();
-            this.label_Destination = new System.Windows.Forms.Label();
-            this.button_DestinationSelect = new System.Windows.Forms.Button();
-            this.textBox_DestinationFilename = new System.Windows.Forms.TextBox();
-            this.customComboBox_DestinationFolder = new Video_Encoder__NET_Core_Version_.CustomComboBox();
-            this.customComboBox_DestinationExtension = new Video_Encoder__NET_Core_Version_.CustomComboBox();
-            this.tablePanel_Main = new System.Windows.Forms.TableLayoutPanel();
-            this.label_Encoding = new System.Windows.Forms.Label();
-            this.panel_Top = new System.Windows.Forms.Panel();
-            this.button_Close = new System.Windows.Forms.Button();
-            this.button_Minimize = new System.Windows.Forms.Button();
-            this.button_Settings = new System.Windows.Forms.Button();
-            this.tablePanel_Src.SuspendLayout();
-            this.tablePanel_Dest.SuspendLayout();
-            this.tablePanel_Main.SuspendLayout();
-            this.panel_Top.SuspendLayout();
-            this.SuspendLayout();
+            button_Confirm = new System.Windows.Forms.Button();
+            tablePanel_Src = new System.Windows.Forms.TableLayoutPanel();
+            label_SourceFile = new System.Windows.Forms.Label();
+            button_SourceSelect = new System.Windows.Forms.Button();
+            textBox_Source = new System.Windows.Forms.TextBox();
+            label_Title = new System.Windows.Forms.Label();
+            tablePanel_Dest = new System.Windows.Forms.TableLayoutPanel();
+            label_Destination = new System.Windows.Forms.Label();
+            button_DestinationSelect = new System.Windows.Forms.Button();
+            textBox_DestinationFilename = new System.Windows.Forms.TextBox();
+            customComboBox_DestinationFolder = new CustomComboBox();
+            customComboBox_DestinationExtension = new CustomComboBox();
+            tablePanel_Main = new System.Windows.Forms.TableLayoutPanel();
+            label_Encoding = new System.Windows.Forms.Label();
+            panel_Top = new System.Windows.Forms.Panel();
+            button_Close = new System.Windows.Forms.Button();
+            button_Minimize = new System.Windows.Forms.Button();
+            button_Settings = new System.Windows.Forms.Button();
+            tablePanel_Src.SuspendLayout();
+            tablePanel_Dest.SuspendLayout();
+            tablePanel_Main.SuspendLayout();
+            panel_Top.SuspendLayout();
+            SuspendLayout();
             // 
             // button_Confirm
             // 
-            this.button_Confirm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tablePanel_Main.SetColumnSpan(this.button_Confirm, 2);
-            this.button_Confirm.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.button_Confirm.FlatAppearance.BorderSize = 2;
-            this.button_Confirm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_Confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Confirm.Font = new System.Drawing.Font("Segoe UI Semilight", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_Confirm.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_Confirm.Location = new System.Drawing.Point(378, 302);
-            this.button_Confirm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button_Confirm.Name = "button_Confirm";
-            this.button_Confirm.Size = new System.Drawing.Size(160, 67);
-            this.button_Confirm.TabIndex = 6;
-            this.button_Confirm.Text = "Do It!";
-            this.button_Confirm.UseVisualStyleBackColor = true;
-            this.button_Confirm.Click += new System.EventHandler(this.button_Confirm_Click);
+            button_Confirm.Anchor = System.Windows.Forms.AnchorStyles.None;
+            tablePanel_Main.SetColumnSpan(button_Confirm, 2);
+            button_Confirm.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            button_Confirm.FlatAppearance.BorderSize = 2;
+            button_Confirm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_Confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_Confirm.Font = new System.Drawing.Font("Segoe UI Semilight", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            button_Confirm.ForeColor = System.Drawing.SystemColors.Control;
+            button_Confirm.Location = new System.Drawing.Point(378, 302);
+            button_Confirm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_Confirm.Name = "button_Confirm";
+            button_Confirm.Size = new System.Drawing.Size(160, 67);
+            button_Confirm.TabIndex = 6;
+            button_Confirm.Text = "Do It!";
+            button_Confirm.UseVisualStyleBackColor = true;
+            button_Confirm.Click += button_Confirm_Click;
             // 
             // tablePanel_Src
             // 
-            this.tablePanel_Src.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tablePanel_Src.ColumnCount = 2;
-            this.tablePanel_Main.SetColumnSpan(this.tablePanel_Src, 2);
-            this.tablePanel_Src.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92F));
-            this.tablePanel_Src.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tablePanel_Src.Controls.Add(this.label_SourceFile, 0, 0);
-            this.tablePanel_Src.Controls.Add(this.button_SourceSelect, 1, 1);
-            this.tablePanel_Src.Controls.Add(this.textBox_Source, 0, 1);
-            this.tablePanel_Src.Location = new System.Drawing.Point(8, 83);
-            this.tablePanel_Src.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tablePanel_Src.Name = "tablePanel_Src";
-            this.tablePanel_Src.RowCount = 2;
-            this.tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tablePanel_Src.Size = new System.Drawing.Size(900, 66);
-            this.tablePanel_Src.TabIndex = 3;
+            tablePanel_Src.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tablePanel_Src.ColumnCount = 2;
+            tablePanel_Main.SetColumnSpan(tablePanel_Src, 2);
+            tablePanel_Src.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92F));
+            tablePanel_Src.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            tablePanel_Src.Controls.Add(label_SourceFile, 0, 0);
+            tablePanel_Src.Controls.Add(button_SourceSelect, 1, 1);
+            tablePanel_Src.Controls.Add(textBox_Source, 0, 1);
+            tablePanel_Src.Location = new System.Drawing.Point(8, 83);
+            tablePanel_Src.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tablePanel_Src.Name = "tablePanel_Src";
+            tablePanel_Src.RowCount = 2;
+            tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tablePanel_Src.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tablePanel_Src.Size = new System.Drawing.Size(900, 66);
+            tablePanel_Src.TabIndex = 3;
             // 
             // label_SourceFile
             // 
-            this.label_SourceFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label_SourceFile.AutoSize = true;
-            this.tablePanel_Src.SetColumnSpan(this.label_SourceFile, 2);
-            this.label_SourceFile.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_SourceFile.ForeColor = System.Drawing.SystemColors.Control;
-            this.label_SourceFile.Location = new System.Drawing.Point(398, 2);
-            this.label_SourceFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 3);
-            this.label_SourceFile.Name = "label_SourceFile";
-            this.label_SourceFile.Size = new System.Drawing.Size(104, 25);
-            this.label_SourceFile.TabIndex = 2;
-            this.label_SourceFile.Text = "Source File:";
+            label_SourceFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            label_SourceFile.AutoSize = true;
+            tablePanel_Src.SetColumnSpan(label_SourceFile, 2);
+            label_SourceFile.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label_SourceFile.ForeColor = System.Drawing.SystemColors.Control;
+            label_SourceFile.Location = new System.Drawing.Point(398, 2);
+            label_SourceFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 3);
+            label_SourceFile.Name = "label_SourceFile";
+            label_SourceFile.Size = new System.Drawing.Size(104, 25);
+            label_SourceFile.TabIndex = 2;
+            label_SourceFile.Text = "Source File:";
             // 
             // button_SourceSelect
             // 
-            this.button_SourceSelect.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.button_SourceSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_SourceSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_SourceSelect.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_SourceSelect.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_SourceSelect.Location = new System.Drawing.Point(832, 33);
-            this.button_SourceSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button_SourceSelect.Name = "button_SourceSelect";
-            this.button_SourceSelect.Size = new System.Drawing.Size(63, 29);
-            this.button_SourceSelect.TabIndex = 4;
-            this.button_SourceSelect.Text = "•••";
-            this.button_SourceSelect.UseVisualStyleBackColor = true;
-            this.button_SourceSelect.Click += new System.EventHandler(this.button_SourceSelect_Click);
+            button_SourceSelect.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            button_SourceSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_SourceSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_SourceSelect.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            button_SourceSelect.ForeColor = System.Drawing.SystemColors.Control;
+            button_SourceSelect.Location = new System.Drawing.Point(832, 33);
+            button_SourceSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_SourceSelect.Name = "button_SourceSelect";
+            button_SourceSelect.Size = new System.Drawing.Size(63, 29);
+            button_SourceSelect.TabIndex = 4;
+            button_SourceSelect.Text = "•••";
+            button_SourceSelect.UseVisualStyleBackColor = true;
+            button_SourceSelect.Click += button_SourceSelect_Click;
             // 
             // textBox_Source
             // 
-            this.textBox_Source.AllowDrop = true;
-            this.textBox_Source.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_Source.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.textBox_Source.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_Source.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Source.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.textBox_Source.Location = new System.Drawing.Point(4, 33);
-            this.textBox_Source.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_Source.Name = "textBox_Source";
-            this.textBox_Source.PlaceholderText = "Enter directory, select file, or drag file here";
-            this.textBox_Source.Size = new System.Drawing.Size(820, 29);
-            this.textBox_Source.TabIndex = 3;
-            this.textBox_Source.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox_Source.DragDrop += new System.Windows.Forms.DragEventHandler(this.textBox_Source_DragDrop);
-            this.textBox_Source.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox_Source_DragEnter);
+            textBox_Source.AllowDrop = true;
+            textBox_Source.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            textBox_Source.BackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            textBox_Source.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textBox_Source.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            textBox_Source.ForeColor = System.Drawing.Color.FromArgb(150, 150, 150);
+            textBox_Source.Location = new System.Drawing.Point(4, 33);
+            textBox_Source.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_Source.Name = "textBox_Source";
+            textBox_Source.PlaceholderText = "Enter directory, select file, or drag file here";
+            textBox_Source.Size = new System.Drawing.Size(820, 29);
+            textBox_Source.TabIndex = 3;
+            textBox_Source.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox_Source.DragDrop += textBox_Source_DragDrop;
+            textBox_Source.DragEnter += textBox_Source_DragEnter;
             // 
             // label_Title
             // 
-            this.label_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label_Title.AutoSize = true;
-            this.tablePanel_Main.SetColumnSpan(this.label_Title, 2);
-            this.label_Title.Font = new System.Drawing.Font("Segoe UI Semilight", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Title.ForeColor = System.Drawing.SystemColors.Control;
-            this.label_Title.Location = new System.Drawing.Point(309, 10);
-            this.label_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_Title.Name = "label_Title";
-            this.label_Title.Size = new System.Drawing.Size(297, 59);
-            this.label_Title.TabIndex = 0;
-            this.label_Title.Text = "Video Encoder";
+            label_Title.Anchor = System.Windows.Forms.AnchorStyles.None;
+            label_Title.AutoSize = true;
+            tablePanel_Main.SetColumnSpan(label_Title, 2);
+            label_Title.Font = new System.Drawing.Font("Segoe UI Semilight", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label_Title.ForeColor = System.Drawing.SystemColors.Control;
+            label_Title.Location = new System.Drawing.Point(309, 10);
+            label_Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label_Title.Name = "label_Title";
+            label_Title.Size = new System.Drawing.Size(297, 59);
+            label_Title.TabIndex = 0;
+            label_Title.Text = "Video Encoder";
             // 
             // tablePanel_Dest
             // 
-            this.tablePanel_Dest.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tablePanel_Dest.ColumnCount = 4;
-            this.tablePanel_Main.SetColumnSpan(this.tablePanel_Dest, 2);
-            this.tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 439F));
-            this.tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
-            this.tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tablePanel_Dest.Controls.Add(this.label_Destination, 0, 0);
-            this.tablePanel_Dest.Controls.Add(this.button_DestinationSelect, 1, 1);
-            this.tablePanel_Dest.Controls.Add(this.textBox_DestinationFilename, 2, 1);
-            this.tablePanel_Dest.Controls.Add(this.customComboBox_DestinationFolder, 0, 1);
-            this.tablePanel_Dest.Controls.Add(this.customComboBox_DestinationExtension, 3, 1);
-            this.tablePanel_Dest.Location = new System.Drawing.Point(8, 173);
-            this.tablePanel_Dest.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tablePanel_Dest.Name = "tablePanel_Dest";
-            this.tablePanel_Dest.RowCount = 2;
-            this.tablePanel_Dest.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tablePanel_Dest.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.tablePanel_Dest.Size = new System.Drawing.Size(900, 67);
-            this.tablePanel_Dest.TabIndex = 4;
+            tablePanel_Dest.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tablePanel_Dest.ColumnCount = 4;
+            tablePanel_Main.SetColumnSpan(tablePanel_Dest, 2);
+            tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 439F));
+            tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
+            tablePanel_Dest.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            tablePanel_Dest.Controls.Add(label_Destination, 0, 0);
+            tablePanel_Dest.Controls.Add(button_DestinationSelect, 1, 1);
+            tablePanel_Dest.Controls.Add(textBox_DestinationFilename, 2, 1);
+            tablePanel_Dest.Controls.Add(customComboBox_DestinationFolder, 0, 1);
+            tablePanel_Dest.Controls.Add(customComboBox_DestinationExtension, 3, 1);
+            tablePanel_Dest.Location = new System.Drawing.Point(8, 173);
+            tablePanel_Dest.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tablePanel_Dest.Name = "tablePanel_Dest";
+            tablePanel_Dest.RowCount = 2;
+            tablePanel_Dest.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            tablePanel_Dest.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            tablePanel_Dest.Size = new System.Drawing.Size(900, 67);
+            tablePanel_Dest.TabIndex = 4;
             // 
             // label_Destination
             // 
-            this.label_Destination.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label_Destination.AutoSize = true;
-            this.tablePanel_Dest.SetColumnSpan(this.label_Destination, 5);
-            this.label_Destination.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Destination.ForeColor = System.Drawing.SystemColors.Control;
-            this.label_Destination.Location = new System.Drawing.Point(398, 2);
-            this.label_Destination.Margin = new System.Windows.Forms.Padding(4, 0, 4, 3);
-            this.label_Destination.Name = "label_Destination";
-            this.label_Destination.Size = new System.Drawing.Size(108, 25);
-            this.label_Destination.TabIndex = 2;
-            this.label_Destination.Text = "Destination:";
+            label_Destination.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            label_Destination.AutoSize = true;
+            tablePanel_Dest.SetColumnSpan(label_Destination, 5);
+            label_Destination.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label_Destination.ForeColor = System.Drawing.SystemColors.Control;
+            label_Destination.Location = new System.Drawing.Point(398, 2);
+            label_Destination.Margin = new System.Windows.Forms.Padding(4, 0, 4, 3);
+            label_Destination.Name = "label_Destination";
+            label_Destination.Size = new System.Drawing.Size(108, 25);
+            label_Destination.TabIndex = 2;
+            label_Destination.Text = "Destination:";
             // 
             // button_DestinationSelect
             // 
-            this.button_DestinationSelect.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.button_DestinationSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_DestinationSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_DestinationSelect.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_DestinationSelect.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_DestinationSelect.Location = new System.Drawing.Point(443, 33);
-            this.button_DestinationSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button_DestinationSelect.Name = "button_DestinationSelect";
-            this.button_DestinationSelect.Size = new System.Drawing.Size(64, 29);
-            this.button_DestinationSelect.TabIndex = 4;
-            this.button_DestinationSelect.Text = "•••";
-            this.button_DestinationSelect.UseVisualStyleBackColor = true;
-            this.button_DestinationSelect.Click += new System.EventHandler(this.button_DestinationSelect_Click);
+            button_DestinationSelect.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            button_DestinationSelect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_DestinationSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_DestinationSelect.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            button_DestinationSelect.ForeColor = System.Drawing.SystemColors.Control;
+            button_DestinationSelect.Location = new System.Drawing.Point(443, 33);
+            button_DestinationSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button_DestinationSelect.Name = "button_DestinationSelect";
+            button_DestinationSelect.Size = new System.Drawing.Size(64, 29);
+            button_DestinationSelect.TabIndex = 4;
+            button_DestinationSelect.Text = "•••";
+            button_DestinationSelect.UseVisualStyleBackColor = true;
+            button_DestinationSelect.Click += button_DestinationSelect_Click;
             // 
             // textBox_DestinationFilename
             // 
-            this.textBox_DestinationFilename.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox_DestinationFilename.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.textBox_DestinationFilename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_DestinationFilename.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_DestinationFilename.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.textBox_DestinationFilename.Location = new System.Drawing.Point(515, 33);
-            this.textBox_DestinationFilename.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox_DestinationFilename.Name = "textBox_DestinationFilename";
-            this.textBox_DestinationFilename.PlaceholderText = "Enter filename";
-            this.textBox_DestinationFilename.Size = new System.Drawing.Size(265, 29);
-            this.textBox_DestinationFilename.TabIndex = 5;
-            this.textBox_DestinationFilename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox_DestinationFilename.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            textBox_DestinationFilename.BackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            textBox_DestinationFilename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            textBox_DestinationFilename.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            textBox_DestinationFilename.ForeColor = System.Drawing.Color.FromArgb(150, 150, 150);
+            textBox_DestinationFilename.Location = new System.Drawing.Point(515, 33);
+            textBox_DestinationFilename.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox_DestinationFilename.Name = "textBox_DestinationFilename";
+            textBox_DestinationFilename.PlaceholderText = "Enter filename";
+            textBox_DestinationFilename.Size = new System.Drawing.Size(265, 29);
+            textBox_DestinationFilename.TabIndex = 5;
+            textBox_DestinationFilename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // customComboBox_DestinationFolder
             // 
-            this.customComboBox_DestinationFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.customComboBox_DestinationFolder.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.customComboBox_DestinationFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customComboBox_DestinationFolder.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.customComboBox_DestinationFolder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.customComboBox_DestinationFolder.FormattingEnabled = true;
-            this.customComboBox_DestinationFolder.Items.AddRange(new object[] {
-            ""});
-            this.customComboBox_DestinationFolder.Location = new System.Drawing.Point(3, 33);
-            this.customComboBox_DestinationFolder.Name = "customComboBox_DestinationFolder";
-            this.customComboBox_DestinationFolder.PlaceholderText = "Enter directory or select folder";
-            this.customComboBox_DestinationFolder.Size = new System.Drawing.Size(433, 29);
-            this.customComboBox_DestinationFolder.TabIndex = 6;
-            this.customComboBox_DestinationFolder.Text = "                        Enter directory or select folder";
-            this.customComboBox_DestinationFolder.TextAppearance = Video_Encoder__NET_Core_Version_.CustomComboBox.AppearanceTypes.Passive;
-            this.customComboBox_DestinationFolder.Leave += new System.EventHandler(this.customComboBox_DestinationFolder_Leave);
+            customComboBox_DestinationFolder.BackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            customComboBox_DestinationFolder.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            customComboBox_DestinationFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            customComboBox_DestinationFolder.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            customComboBox_DestinationFolder.ForeColor = System.Drawing.Color.FromArgb(110, 110, 110);
+            customComboBox_DestinationFolder.FormattingEnabled = true;
+            customComboBox_DestinationFolder.Items.AddRange(new object[] { "" });
+            customComboBox_DestinationFolder.Location = new System.Drawing.Point(3, 33);
+            customComboBox_DestinationFolder.Name = "customComboBox_DestinationFolder";
+            customComboBox_DestinationFolder.PlaceholderText = "Enter directory or select folder";
+            customComboBox_DestinationFolder.Size = new System.Drawing.Size(433, 29);
+            customComboBox_DestinationFolder.TabIndex = 6;
+            customComboBox_DestinationFolder.Text = "                        Enter directory or select folder";
+            customComboBox_DestinationFolder.TextAppearance = CustomComboBox.AppearanceTypes.Passive;
+            customComboBox_DestinationFolder.Leave += customComboBox_DestinationFolder_Leave;
             // 
             // customComboBox_DestinationExtension
             // 
-            this.customComboBox_DestinationExtension.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.customComboBox_DestinationExtension.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.customComboBox_DestinationExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.customComboBox_DestinationExtension.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customComboBox_DestinationExtension.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.customComboBox_DestinationExtension.ForeColor = System.Drawing.SystemColors.Control;
-            this.customComboBox_DestinationExtension.FormattingEnabled = true;
-            this.customComboBox_DestinationExtension.Items.AddRange(new object[] {
-            ".mp4",
-            ".webm",
-            ".avi",
-            ".mov",
-            ".wmv",
-            ".mkv"});
-            this.customComboBox_DestinationExtension.Location = new System.Drawing.Point(787, 33);
-            this.customComboBox_DestinationExtension.Name = "customComboBox_DestinationExtension";
-            this.customComboBox_DestinationExtension.PlaceholderText = "";
-            this.customComboBox_DestinationExtension.Size = new System.Drawing.Size(108, 29);
-            this.customComboBox_DestinationExtension.TabIndex = 6;
+            customComboBox_DestinationExtension.BackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            customComboBox_DestinationExtension.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            customComboBox_DestinationExtension.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            customComboBox_DestinationExtension.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            customComboBox_DestinationExtension.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            customComboBox_DestinationExtension.ForeColor = System.Drawing.SystemColors.Control;
+            customComboBox_DestinationExtension.FormattingEnabled = true;
+            customComboBox_DestinationExtension.Items.AddRange(new object[] { ".mp4", ".webm", ".avi", ".mov", ".wmv", ".mkv" });
+            customComboBox_DestinationExtension.Location = new System.Drawing.Point(787, 33);
+            customComboBox_DestinationExtension.Name = "customComboBox_DestinationExtension";
+            customComboBox_DestinationExtension.PlaceholderText = "";
+            customComboBox_DestinationExtension.Size = new System.Drawing.Size(108, 29);
+            customComboBox_DestinationExtension.TabIndex = 6;
             // 
             // tablePanel_Main
             // 
-            this.tablePanel_Main.ColumnCount = 2;
-            this.tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.05286F));
-            this.tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.94714F));
-            this.tablePanel_Main.Controls.Add(this.tablePanel_Dest, 0, 2);
-            this.tablePanel_Main.Controls.Add(this.label_Title, 0, 0);
-            this.tablePanel_Main.Controls.Add(this.tablePanel_Src, 0, 1);
-            this.tablePanel_Main.Controls.Add(this.button_Confirm, 0, 4);
-            this.tablePanel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel_Main.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel_Main.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tablePanel_Main.Name = "tablePanel_Main";
-            this.tablePanel_Main.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
-            this.tablePanel_Main.RowCount = 5;
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tablePanel_Main.Size = new System.Drawing.Size(916, 378);
-            this.tablePanel_Main.TabIndex = 0;
+            tablePanel_Main.ColumnCount = 2;
+            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.05286F));
+            tablePanel_Main.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.94714F));
+            tablePanel_Main.Controls.Add(tablePanel_Dest, 0, 2);
+            tablePanel_Main.Controls.Add(label_Title, 0, 0);
+            tablePanel_Main.Controls.Add(tablePanel_Src, 0, 1);
+            tablePanel_Main.Controls.Add(button_Confirm, 0, 4);
+            tablePanel_Main.Dock = System.Windows.Forms.DockStyle.Fill;
+            tablePanel_Main.Location = new System.Drawing.Point(0, 0);
+            tablePanel_Main.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tablePanel_Main.Name = "tablePanel_Main";
+            tablePanel_Main.Padding = new System.Windows.Forms.Padding(4, 0, 4, 4);
+            tablePanel_Main.RowCount = 5;
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            tablePanel_Main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tablePanel_Main.Size = new System.Drawing.Size(916, 378);
+            tablePanel_Main.TabIndex = 0;
             // 
             // label_Encoding
             // 
-            this.label_Encoding.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label_Encoding.AutoSize = true;
-            this.label_Encoding.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Encoding.ForeColor = System.Drawing.Color.Firebrick;
-            this.label_Encoding.Location = new System.Drawing.Point(43, 6);
-            this.label_Encoding.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.label_Encoding.Name = "label_Encoding";
-            this.label_Encoding.Size = new System.Drawing.Size(176, 25);
-            this.label_Encoding.TabIndex = 3;
-            this.label_Encoding.Text = "🔴 Ready to encode";
-            this.label_Encoding.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label_Encoding.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            label_Encoding.AutoSize = true;
+            label_Encoding.Font = new System.Drawing.Font("Segoe UI Semilight", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label_Encoding.ForeColor = System.Drawing.Color.Firebrick;
+            label_Encoding.Location = new System.Drawing.Point(43, 6);
+            label_Encoding.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            label_Encoding.Name = "label_Encoding";
+            label_Encoding.Size = new System.Drawing.Size(176, 25);
+            label_Encoding.TabIndex = 3;
+            label_Encoding.Text = "🔴 Ready to encode";
+            label_Encoding.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel_Top
             // 
-            this.panel_Top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.panel_Top.Controls.Add(this.tablePanel_Main);
-            this.panel_Top.Location = new System.Drawing.Point(2, 40);
-            this.panel_Top.Name = "panel_Top";
-            this.panel_Top.Size = new System.Drawing.Size(916, 378);
-            this.panel_Top.TabIndex = 1;
+            panel_Top.BackColor = System.Drawing.Color.FromArgb(48, 48, 48);
+            panel_Top.Controls.Add(tablePanel_Main);
+            panel_Top.Location = new System.Drawing.Point(2, 40);
+            panel_Top.Name = "panel_Top";
+            panel_Top.Size = new System.Drawing.Size(916, 378);
+            panel_Top.TabIndex = 1;
             // 
             // button_Close
             // 
-            this.button_Close.FlatAppearance.BorderSize = 0;
-            this.button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Close.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Close.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_Close.Location = new System.Drawing.Point(880, 0);
-            this.button_Close.Margin = new System.Windows.Forms.Padding(0);
-            this.button_Close.Name = "button_Close";
-            this.button_Close.Size = new System.Drawing.Size(40, 40);
-            this.button_Close.TabIndex = 2;
-            this.button_Close.Text = "╳";
-            this.button_Close.UseVisualStyleBackColor = true;
-            this.button_Close.Click += new System.EventHandler(this.close_Application);
+            button_Close.FlatAppearance.BorderSize = 0;
+            button_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_Close.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button_Close.ForeColor = System.Drawing.SystemColors.Control;
+            button_Close.Location = new System.Drawing.Point(880, 0);
+            button_Close.Margin = new System.Windows.Forms.Padding(0);
+            button_Close.Name = "button_Close";
+            button_Close.Size = new System.Drawing.Size(40, 40);
+            button_Close.TabIndex = 2;
+            button_Close.Text = "╳";
+            button_Close.UseVisualStyleBackColor = true;
+            button_Close.Click += close_Application;
             // 
             // button_Minimize
             // 
-            this.button_Minimize.FlatAppearance.BorderSize = 0;
-            this.button_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Minimize.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Minimize.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_Minimize.Location = new System.Drawing.Point(840, 0);
-            this.button_Minimize.Margin = new System.Windows.Forms.Padding(0);
-            this.button_Minimize.Name = "button_Minimize";
-            this.button_Minimize.Size = new System.Drawing.Size(40, 40);
-            this.button_Minimize.TabIndex = 2;
-            this.button_Minimize.Tag = "Disabled for now";
-            this.button_Minimize.Text = "___";
-            this.button_Minimize.UseVisualStyleBackColor = true;
-            this.button_Minimize.Visible = false;
-            this.button_Minimize.Click += new System.EventHandler(this.button_Minimize_Click);
+            button_Minimize.FlatAppearance.BorderSize = 0;
+            button_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_Minimize.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            button_Minimize.ForeColor = System.Drawing.SystemColors.Control;
+            button_Minimize.Location = new System.Drawing.Point(840, 0);
+            button_Minimize.Margin = new System.Windows.Forms.Padding(0);
+            button_Minimize.Name = "button_Minimize";
+            button_Minimize.Size = new System.Drawing.Size(40, 40);
+            button_Minimize.TabIndex = 2;
+            button_Minimize.Tag = "Disabled for now";
+            button_Minimize.Text = "___";
+            button_Minimize.UseVisualStyleBackColor = true;
+            button_Minimize.Visible = false;
+            button_Minimize.Click += button_Minimize_Click;
             // 
             // button_Settings
             // 
-            this.button_Settings.BackgroundImage = global::Video_Encoder__NET_Core_Version_.Properties.Resources.gearpng;
-            this.button_Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button_Settings.FlatAppearance.BorderSize = 0;
-            this.button_Settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Settings.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_Settings.ForeColor = System.Drawing.SystemColors.Control;
-            this.button_Settings.Location = new System.Drawing.Point(0, 0);
-            this.button_Settings.Margin = new System.Windows.Forms.Padding(0);
-            this.button_Settings.Name = "button_Settings";
-            this.button_Settings.Size = new System.Drawing.Size(40, 40);
-            this.button_Settings.TabIndex = 2;
-            this.button_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button_Settings.UseVisualStyleBackColor = true;
-            this.button_Settings.Click += new System.EventHandler(this.button_Settings_Click);
+            button_Settings.BackgroundImage = Properties.Resources.gearpng;
+            button_Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            button_Settings.FlatAppearance.BorderSize = 0;
+            button_Settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(66, 66, 66);
+            button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button_Settings.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            button_Settings.ForeColor = System.Drawing.SystemColors.Control;
+            button_Settings.Location = new System.Drawing.Point(0, 0);
+            button_Settings.Margin = new System.Windows.Forms.Padding(0);
+            button_Settings.Name = "button_Settings";
+            button_Settings.Size = new System.Drawing.Size(40, 40);
+            button_Settings.TabIndex = 2;
+            button_Settings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            button_Settings.UseVisualStyleBackColor = true;
+            button_Settings.Click += button_Settings_Click;
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(920, 420);
-            this.Controls.Add(this.button_Settings);
-            this.Controls.Add(this.button_Minimize);
-            this.Controls.Add(this.button_Close);
-            this.Controls.Add(this.panel_Top);
-            this.Controls.Add(this.label_Encoding);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.Name = "MainWindow";
-            this.Text = "Encoder";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.close_Application);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseDown);
-            this.tablePanel_Src.ResumeLayout(false);
-            this.tablePanel_Src.PerformLayout();
-            this.tablePanel_Dest.ResumeLayout(false);
-            this.tablePanel_Dest.PerformLayout();
-            this.tablePanel_Main.ResumeLayout(false);
-            this.tablePanel_Main.PerformLayout();
-            this.panel_Top.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(33, 33, 33);
+            ClientSize = new System.Drawing.Size(920, 420);
+            Controls.Add(button_Settings);
+            Controls.Add(button_Minimize);
+            Controls.Add(button_Close);
+            Controls.Add(panel_Top);
+            Controls.Add(label_Encoding);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "MainWindow";
+            Text = "Encoder";
+            FormClosing += close_Application;
+            MouseDown += MainWindow_MouseDown;
+            tablePanel_Src.ResumeLayout(false);
+            tablePanel_Src.PerformLayout();
+            tablePanel_Dest.ResumeLayout(false);
+            tablePanel_Dest.PerformLayout();
+            tablePanel_Main.ResumeLayout(false);
+            tablePanel_Main.PerformLayout();
+            panel_Top.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
