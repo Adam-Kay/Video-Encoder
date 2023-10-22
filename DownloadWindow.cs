@@ -90,6 +90,9 @@ namespace Video_Encoder__NET_Core_Version_ {
                 MessageBox.Show(
                     $"There was an error downloading and extracting the file. Please try again or contact the developer. " +
                     $"\n\nMessage:\n{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                ///TODO: Add winget ffmpeg failsafe option with confirmation. 
+
                 this.Close();
                 return;
             }

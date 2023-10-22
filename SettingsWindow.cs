@@ -83,7 +83,7 @@ namespace Video_Encoder__NET_Core_Version_ {
                 }
 
                 ((MainWindow)mainWindow).ffmpegPath = textBox_ffmpegLoc.Text;
-                Debug.WriteLine("Settings loaded.");
+                Debug.WriteLine($"Settings loaded from {settingsLocation}\\settings.json .");
 
             } catch (Exception e) when (e is FileNotFoundException || e is DirectoryNotFoundException) { /// If file not found
                 Debug.WriteLine($"Settings file not found at {settingsLocation}. One will be generated later.");
@@ -123,8 +123,8 @@ namespace Video_Encoder__NET_Core_Version_ {
         SaveSettings:
             try {
                 File.WriteAllText($"{settingsLocation}\\settings.json", jsonText);
-                Debug.WriteLine("Settings File Saved.");
-                button_Save.Text = "Saved!";
+                Debug.WriteLine($"Settings saved to {settingsLocation}\\settings.json .");
+                button_Save.Text = "Saved!"; ///TODO: Make sure to change text back after window is closed.
                 button_Save.Update();
             } catch (DirectoryNotFoundException) { /// If directory doesn't exist
                 try {
@@ -145,8 +145,6 @@ namespace Video_Encoder__NET_Core_Version_ {
         }
 
         private void button_select_ffmpegLoc_Click(object sender, EventArgs e) {
-            ///TODO: Bring up window for selecting ffmpeg.exe with appropriate filter
-
             using OpenFileDialog openFileDialog = new();
             openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             openFileDialog.Filter = "FFmpeg|*.exe";
