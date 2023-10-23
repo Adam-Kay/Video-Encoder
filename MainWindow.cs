@@ -201,7 +201,7 @@ namespace Video_Encoder__NET_Core_Version_ {
                 StartInfo = new ProcessStartInfo {
                     FileName = $"{ffmpegPath}",
                     Arguments = $"-i \"{textBox_Source.Text}\" \"{destinationFullPath}\"",
-                    //WindowStyle = ProcessWindowStyle.Hidden,
+                    WindowStyle = ProcessWindowStyle.Normal,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     CreateNoWindow = true,

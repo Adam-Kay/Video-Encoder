@@ -124,7 +124,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             try {
                 File.WriteAllText($"{settingsLocation}\\settings.json", jsonText);
                 Debug.WriteLine($"Settings saved to {settingsLocation}\\settings.json .");
-                button_Save.Text = "Saved!"; ///TODO: Make sure to change text back after window is closed.
+                button_Save.Text = "Saved!";
                 button_Save.Update();
             } catch (DirectoryNotFoundException) { /// If directory doesn't exist
                 try {
@@ -141,6 +141,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             ((MainWindow)mainWindow).ffmpegPath = textBox_ffmpegLoc.Text;
 
             Thread.Sleep(500); /// Artifical wait of 500ms
+            button_Save.Text = "Save Changes";
             this.Close();
         }
 

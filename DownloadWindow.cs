@@ -52,7 +52,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             coloredProgressBar_totalProgress.Visible = true;
             coloredProgressBar_currentTask.Visible = true;
 
-            using (WebClient client = new()) {
+            using (WebClient client = new()) { //FIX: Migrate to using HttpClient
                 client.DownloadProgressChanged += client_DownloadProgressChanged;
                 client.DownloadFileCompleted += client_DownloadProgressComplete;
                 Debug.WriteLine("Writing data to: " + $"{tempPath}\\FFmpeg.zip.tmp");
