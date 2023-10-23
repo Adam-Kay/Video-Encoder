@@ -194,7 +194,11 @@ namespace Video_Encoder__NET_Core_Version_ {
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 } else {
-                    Debug.WriteLine($"File already exists at \"{destinationFullPath}\""); /// TODO: Detect and handle overwrite
+                    Debug.WriteLine($"File already exists at \"{destinationFullPath}\"");
+                    MessageBox.Show("The destination file already exists. Consider naming the file something else.", "File Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                    /// TODO: Allow option for file overwrite.
                 }
             }
 
@@ -250,7 +254,7 @@ namespace Video_Encoder__NET_Core_Version_ {
         }
 
         private void close_Application(object sender, EventArgs e) {
-            // GET DONE: Figure out a way to terminate the ffmpeg process because currently after closing the app it continues encoding
+            /// FIX: Figure out a way to terminate the ffmpeg process because currently after closing the app it continues encoding
 
             if (ffmpegProcess is not null) {
                 ffmpegProcess.Close();
