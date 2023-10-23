@@ -99,6 +99,7 @@ namespace Video_Encoder__NET_Core_Version_ {
         private void button_download_ffmpeg_Click(object sender, EventArgs e) {
             using (var downloadwindow = new DownloadWindow()) {
                 downloadwindow.StartPosition = FormStartPosition.CenterParent;
+                downloadwindow.ShowInTaskbar = false;
                 downloadwindow.settingsWindow = this;
                 downloadwindow.ShowDialog();
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -265,6 +266,7 @@ namespace Video_Encoder__NET_Core_Version_ {
 
         private void button_Settings_Click(object sender, EventArgs e) {
             settingswindow.StartPosition = FormStartPosition.CenterParent;
+            settingswindow.ShowInTaskbar = false;
             settingswindow.ShowDialog();
         }
 

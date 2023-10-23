@@ -16,7 +16,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             base.WndProc(ref m);
 
             /// Supposedly reduces flicker.
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true); // seems to make no difference
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw, true); // seems to make no difference
 
             if (m.Msg == WM_PAINT) {
                 using (var g = Graphics.FromHwnd(Handle)) {
