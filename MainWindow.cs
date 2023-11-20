@@ -197,10 +197,15 @@ namespace Video_Encoder__NET_Core_Version_ {
                 } else {
                     Debug.WriteLine($"File already exists at \"{destinationFullPath}\"");
                     DialogResult overwriteResult = MessageBox.Show($"The destination file already exists. " +
-                        $"Would you like to overwrite '{textBox_DestinationFilename.Text + customComboBox_DestinationExtension.SelectedItem}'?", 
-                        "File Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-                    if (overwriteResult != DialogResult.Yes) { overwrite = true; }
-                    else { return; }
+                        $"Would you like to overwrite '{textBox_DestinationFilename.Text + customComboBox_DestinationExtension.SelectedItem}'?",
+                        "File Error", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (overwriteResult == DialogResult.Yes) {
+                        overwrite = true;
+                        Debug.WriteLine("Overwrite confirmed.");
+                    } else {
+                        Debug.WriteLine("Operation canceled.");
+                        return;
+                    }
                     /// TODO: Allow option for file overwrite.
                 }
             }
@@ -208,7 +213,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             ffmpegProcess = new() {
                 StartInfo = new ProcessStartInfo {
                     FileName = $"{ffmpegPath}",
-                    Arguments = $"{(overwrite?"-y ":"")}-i \"{textBox_Source.Text}\" \"{destinationFullPath}\"",
+                    Arguments = $"{(overwrite ? "-y " : "")}-i \"{textBox_Source.Text}\" \"{destinationFullPath}\"",
                     WindowStyle = ProcessWindowStyle.Normal,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
@@ -255,6 +260,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             label_Encoding.Update();
             this.UseWaitCursor = false; /// Have to have it here because if .Start() throws an error the cursor will never be reset
 
+            /// TODO: Add "Completed!" dialog or something similar.
         }
 
         private void close_Application(object sender, EventArgs e) {
