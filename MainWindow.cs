@@ -185,7 +185,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             if (!File.Exists(textBox_Source.Text)) {
                 /// TODO: Continue idiotproofing
                 /// TODO: Be nice for once
-                MessageBox.Show("You idiot. That doesn't exist now, does it?", "Dipshit", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Source file not found. Please check the path and try again.", "File not found.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (File.Exists(destinationFullPath)) { /// If destination file already exists
                 if (textBox_Source.Text == destinationFullPath) { /// If filepaths are the same
@@ -217,6 +217,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             Label label_Encoding_or = new() { ForeColor = label_Encoding.ForeColor, Text = label_Encoding.Text };
             label_Encoding.ForeColor = Color.Orange;
             label_Encoding.Text = "🔴 Encoding...";
+            ///FIX: Find out why text overlaps when this is displayed.
             label_Encoding.Update();
             string sourceFileLength;
 

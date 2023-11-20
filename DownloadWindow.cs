@@ -87,9 +87,9 @@ namespace Video_Encoder__NET_Core_Version_ {
                 File.Move($"{tempPath}\\FFmpeg.zip.tmp", $"{tempPath}\\FFmpeg.zip");
                 ZipFile.ExtractToDirectory($"{tempPath}\\FFmpeg.zip", $"{tempPath}", true);
             } catch (Exception e) {
-                MessageBox.Show(
+                DialogResult wingetVerdict = MessageBox.Show(
                     $"There was an error downloading and extracting the file. Please try again or contact the developer. " +
-                    $"\n\nMessage:\n{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    $"\n\nMessage:\n{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); /// TODO: change buttons (failsafe).
 
                 ///TODO: Add winget ffmpeg failsafe option with confirmation. 
 
