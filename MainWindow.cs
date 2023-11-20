@@ -182,9 +182,10 @@ namespace Video_Encoder__NET_Core_Version_ {
                                          $"{textBox_DestinationFilename.Text}" +
                                          $"{customComboBox_DestinationExtension.SelectedItem}";
 
+            bool overwrite = false;
+
             if (!File.Exists(textBox_Source.Text)) {
                 /// TODO: Continue idiotproofing
-                /// TODO: Be nice for once
                 MessageBox.Show("Source file not found. Please check the path and try again.", "File not found.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (File.Exists(destinationFullPath)) { /// If destination file already exists
@@ -195,9 +196,11 @@ namespace Video_Encoder__NET_Core_Version_ {
                     return;
                 } else {
                     Debug.WriteLine($"File already exists at \"{destinationFullPath}\"");
-                    MessageBox.Show("The destination file already exists. Consider naming the file something else.", "File Error",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    DialogResult overwriteResult = MessageBox.Show($"The destination file already exists. " +
+                        $"Would you like to overwrite '{textBox_DestinationFilename.Text + customComboBox_DestinationExtension.SelectedItem}'?", 
+                        "File Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    if (overwriteResult != DialogResult.Yes) { overwrite = true; }
+                    else { return; }
                     /// TODO: Allow option for file overwrite.
                 }
             }
@@ -205,7 +208,7 @@ namespace Video_Encoder__NET_Core_Version_ {
             ffmpegProcess = new() {
                 StartInfo = new ProcessStartInfo {
                     FileName = $"{ffmpegPath}",
-                    Arguments = $"-i \"{textBox_Source.Text}\" \"{destinationFullPath}\"",
+                    Arguments = $"{(overwrite?"-y ":"")}-i \"{textBox_Source.Text}\" \"{destinationFullPath}\"",
                     WindowStyle = ProcessWindowStyle.Normal,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
